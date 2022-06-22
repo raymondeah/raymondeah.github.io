@@ -1,4 +1,4 @@
 /node_modules/
 # /public/build/
-
+*.txt
 .DS_Store
