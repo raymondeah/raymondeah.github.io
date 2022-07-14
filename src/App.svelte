@@ -1,9 +1,15 @@
 <script>
 	import Landing from './components/Landing.svelte'
 	import About from './components/About.svelte'
+	// import Allegrify from './components/Allegrify.svelte'
+	import Rumble from './components/Rumble.svelte'
+	import Contact from './components/Contact.svelte'
+	import Footer from './components/Footer.svelte'
 </script>
 
-<main class="container">
-	<Landing />
-	<!-- <About /> -->
-</main>
+<Landing />
+<About />
+<!-- <Allegrify /> -->
+<Rumble />
+<Contact />
+<Footer />

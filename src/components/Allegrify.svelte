@@ -1,0 +1,201 @@
+<script>
+    import Github from './icons/Github.svelte'
+    import Link from './icons/Link.svelte'
+
+    let mobile = false;
+</script>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <div class="content">
+            <div class="desc">
+                <div class="title">
+                    <p><b>Allegrify</b></p>
+                    <div class="icons">
+                        <a class="icon" href="" target="_blank">
+                            <Link />
+                        </a>
+                        <a class="icon" href="https://github.com/raymondeah/allegrify" target="_blank">
+                            <Github />
+                        </a>
+                    </div>
+                </div>
+                <div class="summary">
+                    <!-- <p>Allegrify is a web app that allows Spotify users to rapidly discover new music by swiping through personalized song recommendations. Users can select from a wide array of filters and customizations to find music that is perfect for them.</p> -->
+                    <p>"Allegro" is a musical tempo marking that means "fast, quick, and bright". I created Allegrify (Allegro + Spotify) to help Spotify users rapidly discover new music. Users can discover hundreds of new songs in just a few minutes by swiping through snippets of personalized recommendations.</p>
+                    <p><b>Tech Stack:</b> Vue, Flask, TypeScript, Python, HTML, CSS, MongoDB</p>
+                </div>
+            </div>
+            
+            <!-- {#if mobile}
+                <div class="mobile-img">
+                    <img src="images/rumble_sc_mobile.png" alt="">
+                </div>
+            {:else}
+                <div class="desktop-img">
+                    <img src="images/rumble_sc.png" alt="">
+                </div>  
+            {/if} -->
+            <div class="mobile-img">
+                <img src="images/allegro_sc_mobile.png" alt="">
+            </div>
+            <div class="desktop-img">
+                <img src="images/allegro_sc.png" alt="">
+            </div>  
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        background-color: rgb(12, 12, 12);
+        color: white;
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 24px; */
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        background-color: rgb(32, 32, 32);
+        width: min(96%, 60rem);
+    }
+
+    .content {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        width: min(calc(100% - 2rem), 58rem);
+        padding: 1rem;
+        /* margin: 1rem 0; */
+        gap: 1rem;
+    }
+
+    @media (min-width: 480px) {
+        .content {
+            padding: 1.5rem;
+            gap: 1.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .content {
+            padding: 3rem;
+            gap: 3rem;
+        }
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        /* padding: 0 2px; */
+    }
+
+    @media (min-width: 768px) {
+        .desc {
+            flex-direction: row;
+            gap: 2rem;
+        }
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        width: 4rem;
+    }
+
+    @media (min-width: 768px) {
+        .icons {
+            width: 100%;
+        }
+    }
+
+    .icon {
+        color: white;
+        width: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* gap: 1rem; */
+
+        font-size: 1.8rem;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            flex-direction: column;
+            justify-content: left;
+            gap: 1rem;
+        }
+    }
+
+    .summary {
+        color: rgb(200, 200, 200);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        font-size: 1.1rem;
+    }
+
+    @media(min-width: 480px) {
+        .summary {
+            font-size: 1.2rem;
+        }
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    @media (min-width: 480px) {
+        .desktop-img {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            background-color: rgba(128, 128, 128, 0.5);
+            border-radius: 0.5rem;
+            padding: 0.5rem 0;
+        }
+    }
+
+    .mobile-img {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(128, 128, 128, 0.5);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        /* height: 100%; */
+    }
+
+    @media (min-width: 480px) {
+        .mobile-img {
+            display: none;
+        }
+    }
+
+    img {
+        width: calc(100% - 1rem);
+        border-radius: 0.5rem;
+        /* display: block; */
+        /* max-width: 100%; */
+    }
+</style>
