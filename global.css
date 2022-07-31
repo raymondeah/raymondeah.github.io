@@ -31,7 +31,7 @@ b {
 
 @supports (-webkit-touch-callout: none) {
 	h1 {
-		font-weight: 700;
+		font-weight: 700 !important;
 	}
  }
 
