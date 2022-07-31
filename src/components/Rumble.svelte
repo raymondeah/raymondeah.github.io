@@ -136,9 +136,10 @@
         height: 1.6rem;
         fill: white;
         color: white;
-        /* display: flex;
+        padding: 0;
+        display: flex;
         justify-content: center;
-        align-items: center; */
+        align-items: center;
     }
 
     .title {
