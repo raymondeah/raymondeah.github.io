@@ -128,7 +128,7 @@
     }
 
     .icon {
-        fill: white;
+        fill: white !important;
         width: 1.6rem;
         height: 1.6rem;
         display: flex;
