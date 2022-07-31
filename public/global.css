@@ -15,6 +15,8 @@ html, body {
 body {
 	box-sizing: border-box;
 	font-family: 'Lato', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -28,12 +30,6 @@ a {
 b {
 	color: white;
 }
-
-@supports (-webkit-touch-callout: none) {
-	h1 {
-		font-weight: 700 !important;
-	}
- }
 
 h2 {
 	font-size: 2rem;
