@@ -121,7 +121,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.4rem;
+        /* gap: 0rem; */
         width: 4rem;
     }
 
@@ -132,14 +132,15 @@
     }
 
     .icon {
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 2rem;
+        height: 2rem;
         fill: white;
         color: white;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* border: 2px solid red; */
     }
 
     .title {
@@ -154,7 +155,7 @@
         .title {
             flex-direction: column;
             justify-content: left;
-            gap: 1rem;
+            gap: 0.5rem;
         }
     }
 
