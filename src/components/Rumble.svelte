@@ -76,6 +76,7 @@
         border-radius: 0.5rem;
         background-color: rgb(32, 32, 32);
         width: min(96%, 60rem);
+        color: white;
     }
 
     .content {
@@ -84,6 +85,7 @@
         width: min(calc(100% - 2rem), 58rem);
         padding: 1rem;
         gap: 1rem;
+        color: white;
     }
 
     @media (min-width: 480px) {
@@ -104,6 +106,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        color: white;
     }
 
     @media (min-width: 768px) {
