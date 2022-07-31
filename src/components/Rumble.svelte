@@ -13,11 +13,16 @@
                 <div class="title">
                     <p><b>RUMBLE</b></p>
                     <div class="icons">
-                        <a class="icon" href="https://wordleaot.com" target="_blank">
-                            <Link />
+                        <a href="https://wordleaot.com" target="_blank">
+                            <div class="icon">
+                                <Link />
+                            </div>
                         </a>
+
                         <a class="icon" href="https://github.com/raymondeah/RUMBLE" target="_blank">
-                            <Github />
+                            <div class="icon">
+                                <Github />
+                            </div>
                         </a>
                     </div>
                 </div>

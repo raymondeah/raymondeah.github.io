@@ -34,12 +34,13 @@
 
     a {
         text-decoration: none;
-        color: white;
+        /* color: white; */
+        color: rgb(200, 200, 200);
         font-weight: 600;
     }
 
     a:hover {
-        color:rgb(200, 200, 200)
+        color:white;
     }
     
     .big {
