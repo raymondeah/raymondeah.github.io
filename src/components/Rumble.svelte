@@ -19,7 +19,7 @@
                             </div>
                         </a>
 
-                        <a class="icon" href="https://github.com/raymondeah/RUMBLE" target="_blank">
+                        <a href="https://github.com/raymondeah/RUMBLE" target="_blank">
                             <div class="icon">
                                 <Github />
                             </div>
@@ -67,6 +67,7 @@
 
     a {
         color: white;
+        border: 2px solid red;
     }
 
     .card {
@@ -128,12 +129,14 @@
     }
 
     .icon {
-        fill: white !important;
         width: 1.6rem;
         height: 1.6rem;
+        fill: white;
+        background-color: white;;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 2px solid green;
     }
 
     .title {
