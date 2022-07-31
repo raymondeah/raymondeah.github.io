@@ -13,7 +13,8 @@
         height: 3rem;
         /* border: 2px solid red; */
         font-size: 0.9rem;
-        font-weight: bold;
+        font-weight: 700;
         color:white;
+        font-family: 'Lato', sans-serif;
     }
 </style>
