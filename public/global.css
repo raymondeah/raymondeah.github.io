@@ -29,9 +29,11 @@ b {
 	color: white;
 }
 
-h1 {
-	font-weight: 800;
-}
+@supports (-webkit-touch-callout: none) {
+	h1 {
+		font-weight: 700;
+	}
+ }
 
 h2 {
 	font-size: 2rem;
