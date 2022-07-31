@@ -29,6 +29,10 @@ b {
 	color: white;
 }
 
+h1 {
+	font-weight: bold;
+}
+
 h2 {
 	font-size: 2rem;
 	color: white;
