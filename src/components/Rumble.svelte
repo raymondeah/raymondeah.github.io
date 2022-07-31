@@ -67,7 +67,6 @@
 
     a {
         color: white;
-        border: 2px solid red;
     }
 
     .card {
@@ -115,6 +114,7 @@
     }
 
     .icons {
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -132,18 +132,17 @@
         width: 1.6rem;
         height: 1.6rem;
         fill: white;
-        background-color: white;;
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid green;
     }
 
     .title {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        color: white;
         font-size: 1.8rem;
     }
 
