@@ -12,9 +12,9 @@
         /* color: rgb(87, 87, 87); */
         height: 3rem;
         /* border: 2px solid red; */
-        font-size: 0.9rem;
-        font-weight: 700;
-        color:white;
+        font-size: 0.95rem;
         font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        color:white;
     }
 </style>
