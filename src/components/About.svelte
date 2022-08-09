@@ -9,7 +9,7 @@
             </p>
             
             <p>
-            Currently, I'm at <a href="https://www.oracle.com/" target="_blank">Oracle</a> as a Software Engineer Intern, working on microservices and DevOps across an array of SaaS products related to project management.
+            This summer, I was at <a href="https://www.oracle.com/" target="_blank">Oracle</a> as a Software Engineer Intern, where I worked on microservices and DevOps across an array of SaaS products related to project management.
             </p>
             
             <p>
