@@ -3,8 +3,8 @@
     import Github from "./icons/Github.svelte";
     import LinkedIn from "./icons/LinkedIn.svelte";
 
-    let active = true;
-    let toggle = true
+    let active = false;
+    let toggle = false;
     function handleClick() {
         active = !active
         toggle = !toggle
@@ -18,20 +18,20 @@
                 <li><a on:click={handleClick} href="#about">about</a></li>
                 <li><a on:click={handleClick} href="#projects">projects</a></li>
                 <li><a on:click={handleClick} href="#contact">contact</a></li>
-                <li><a on:click={handleClick} href="Eah_Raymond.pdf">resume</a></li>
+                <li><a href="Eah_Raymond.pdf" target="_blank">resume</a></li>
                 <li>
                     <div class="socials">
-                        <a on:click={handleClick} href="https://github.com/raymondeah" target="_blank">
+                        <a href="https://github.com/raymondeah" target="_blank">
                             <div class="icon">
                                 <Github />
                             </div>
                         </a>           
-                        <a on:click={handleClick} href="mailto:eah.r@northeastern.edu" target="_blank">
+                        <a href="mailto:eah.r@northeastern.edu" target="_blank">
                             <div class="icon">
                                 <Email />
                             </div>
                         </a>
-                        <a on:click={handleClick} href="https://linkedin.com/in/raymondeah" target="_blank">
+                        <a href="https://linkedin.com/in/raymondeah" target="_blank">
                             <div class="icon li">
                                 <LinkedIn />
                             </div>
@@ -122,6 +122,7 @@
         transition: transform 0.4s ease-in;
         border: 2px solid white;
         border-right: none;
+        user-select: none;
     }
     
     .active {
@@ -137,7 +138,7 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        height: 1.6rem;
+        height: 2rem;
     }
 
     .icon {
@@ -153,6 +154,7 @@
         display: block;
         cursor: pointer;
         padding: 0.5rem;
+        user-select: none;
     }
 
     .burger div {
