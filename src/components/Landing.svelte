@@ -1,14 +1,52 @@
 <script>
-    import Hamburger from './icons/Hamburger.svelte'
+    import Email from "./icons/Email.svelte";
+    import Github from "./icons/Github.svelte";
+    import LinkedIn from "./icons/LinkedIn.svelte";
+
+    let active = true;
+    let toggle = true
+    function handleClick() {
+        active = !active
+        toggle = !toggle
+    }
 </script>
 
 <section>
-    <div class="nav">
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-        <a href="Eah_Raymond.pdf" target="_blank">resume</a>
-    </div>
+    <header>
+        <nav>
+            <ul class:active class="nav-links">
+                <li><a on:click={handleClick} href="#about">about</a></li>
+                <li><a on:click={handleClick} href="#projects">projects</a></li>
+                <li><a on:click={handleClick} href="#contact">contact</a></li>
+                <li><a on:click={handleClick} href="Eah_Raymond.pdf">resume</a></li>
+                <li>
+                    <div class="socials">
+                        <a on:click={handleClick} href="https://github.com/raymondeah" target="_blank">
+                            <div class="icon">
+                                <Github />
+                            </div>
+                        </a>           
+                        <a on:click={handleClick} href="mailto:eah.r@northeastern.edu" target="_blank">
+                            <div class="icon">
+                                <Email />
+                            </div>
+                        </a>
+                        <a on:click={handleClick} href="https://linkedin.com/in/raymondeah" target="_blank">
+                            <div class="icon li">
+                                <LinkedIn />
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <div on:click={handleClick} class:toggle class="burger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </nav>  
+    </header>
     
     <div class="landing">
         <div class="temp">
@@ -17,10 +55,6 @@
             <p class="small">A student and developer interested in front end and full stack development.</p>
         </div>
     </div>
-    
-    <!-- <a href="#about" class="caret-container">
-        <Caret />
-    </a> -->
 </section>
 
 <style>
@@ -29,12 +63,12 @@
         height: 100%;
         background-color: rgb(12, 12, 12);
         color:white;
+        position: relative;
         user-select: none;
     }
 
     a {
         text-decoration: none;
-        /* color: white; */
         color: rgb(200, 200, 200);
         font-weight: 600;
     }
@@ -58,63 +92,124 @@
         font-size: 1.4rem;
         margin-top: 0.5rem;
         color: rgb(150, 150, 150);
-        /* border: 2px solid red; */
-        /* width: 75%; */
     }
 
     .intro {
         color: rgb(150, 150, 150);
     }
 
-    .name {
-        color: white;
+    nav {
+        height: 5rem;
+        display: flex;
+        justify-content: right;
     }
 
-    .nav {
-        display: none;
+    .nav-links {
+        width: 75%;
+        height: calc(100% - 4px);
+        background-color: rgb(12, 12, 12);
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+        border: 2px solid white;
+        border-right: none;
+    }
+    
+    .active {
+        transform: translateX(0%);
     }
 
-    @media (min-width: 480px) {
-        .nav {
+    .nav-links li {
+        list-style: none;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        height: 1.6rem;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.6rem;
+        height: 1.6rem;
+        fill: white;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .burger div {
+        width: 32px;
+        width: 2rem;
+        height: 4px;
+        margin: 7px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    @media (min-width: 768px) {
+        .nav-links {
+            width: initial;
             height: 5rem;
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            font-size: 1.1rem;
-            gap: 2.5rem;
-            margin-right: 2.5rem;
+            flex-direction: row;
+            transform: translateX(0%);
+            transition: none;
+            border: none;
         }
+
+        .nav-links .socials {
+            display: none;
+        }
+
+        .burger {
+            display: none;
+        }        
+    }
+
+    .toggle .line-1 {
+        transform: rotate(-45deg) translate(-7px, 8px);
+    }
+    .toggle .line-2 {
+        opacity: 0;
+    }
+    .toggle .line-3 {
+        transform: rotate(45deg) translate(-7px, -8px);
     }
 
     .landing {
-        /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: left;
         margin: 0 auto;
-        /* gap: 2rem; */
         width: 90%;
-        height: 100%
-        /* border: 5px solid red; */
+        height: calc(100% - 10rem);
     }
 
     @media (min-width: 480px) {
         .landing {
-            /* border: 2px solid red; */
             width: calc(100% - 2rem);
             height: calc(100% - 9rem);
-            /* margin: 0 1rem; */
-            /* padding-bottom: 0rem; */
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
-
-    /* @media (min-width: 1024px) {
-	    .landing {
-	        gap: 4rem;
-	    }
-    } */
 </style>
