@@ -138,16 +138,14 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        height: 2rem;
-        width: 10rem;
     }
 
     .icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 2rem;
+        height: 2rem;
         fill: white;
     }
 
