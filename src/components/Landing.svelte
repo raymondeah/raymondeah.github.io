@@ -82,16 +82,21 @@
         font-weight: 800;
     }
 
+    .small {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: rgb(150, 150, 150);
+    }
+
+
     @media (min-width: 480px) {
         .big {
             font-size: 6rem;
         }
-    }
 
-    .small {
-        font-size: 1.4rem;
-        margin-top: 0.5rem;
-        color: rgb(150, 150, 150);
+        .small {
+            font-size: 1.4rem;
+        }
     }
 
     .intro {
