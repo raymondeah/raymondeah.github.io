@@ -10,6 +10,7 @@ html, body {
 	scroll-behavior: smooth;
 	line-height: 1.3;
 	/* font-size: 1.2rem; */
+	overflow-x: hidden;
 }
 
 body {
