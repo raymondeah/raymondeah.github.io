@@ -139,6 +139,7 @@
         align-items: center;
         gap: 1rem;
         height: 2rem;
+        width: 10rem;
     }
 
     .icon {
