@@ -69,8 +69,14 @@
 
     a {
         text-decoration: none;
-        color: rgb(200, 200, 200);
+        color: white;
         font-weight: 600;
+    }
+
+    @media (min-width: 768px) {
+        a {
+            color: rgb(200, 200, 200)
+        }
     }
 
     a:hover {
@@ -122,7 +128,6 @@
         align-items: center;
         gap: 3rem;
         font-size: 1.2rem;
-        font-weight: 600;
         transform: translateX(100%);
         transition: transform 0.4s ease-in;
         border: 2px solid white;
@@ -174,6 +179,7 @@
         .nav-links {
             width: initial;
             height: 5rem;
+            font-size: 1.05rem;
             flex-direction: row;
             transform: translateX(0%);
             transition: none;
