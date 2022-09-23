@@ -9,11 +9,11 @@
             </p>
             
             <p>
-            This summer, I was at <a href="https://www.oracle.com/" target="_blank">Oracle</a> as a Software Engineer Intern, where I worked on microservices and DevOps across an array of SaaS products related to project management.
+            Last summer, I was at <a href="https://www.oracle.com/" target="_blank">Oracle</a> as a Software Engineer Intern, where I worked on microservices and DevOps across an array of SaaS products related to project management.
             </p>
             
             <p>
-            Last winter, I was at <a href="https://www.northeastern.edu/kostas/" target="_blank">Kostas Research Institute</a> as a Data Science Co-op, where I worked on an R&D project in the geospatial sector involving remote sensing and satellite imaging data.
+            Last winter, I was at <a href="https://www.northeastern.edu/kostas/" target="_blank">Kostas Research Institute</a> as a Data Science Intern, where I worked on an R&D project in the geospatial sector involving remote sensing and satellite imaging data.
             </p>
             
             <p>
