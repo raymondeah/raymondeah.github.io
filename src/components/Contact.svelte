@@ -8,7 +8,7 @@
     <div class="container">
         <div class="left">
             <h2>Get in touch</h2>
-            <p class="desc">I'm looking for Winter 2023 and Summer 2023 software engineering internships. If you think I'm a good fit, shoot me an email! Or if you'd just like to say hi, don't be afraid to reach out!</p>
+            <p class="desc">I'm looking for Winter/Spring 2023 software engineering internships. If you think I'm a good fit, shoot me an email! Or if you'd just like to say hi, don't be afraid to reach out!</p>
         </div>
         <div class="right">
             <a href="Eah_Raymond.pdf" target="_blank">
