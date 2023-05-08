@@ -6,7 +6,6 @@
 </script>
 
 <section id="projects">
-    <h2>Projects</h2>
     <div class="card">
         <div class="content">
             <div class="desc">
@@ -22,27 +21,28 @@
                     </div>
                 </div>
                 <div class="summary">
-                    <!-- <p>Allegrify is a web app that allows Spotify users to rapidly discover new music by swiping through personalized song recommendations. Users can select from a wide array of filters and customizations to find music that is perfect for them.</p> -->
-                    <p>"Allegro" is a musical tempo marking that means "fast, quick, and bright". I created Allegrify (Allegro + Spotify) to help Spotify users rapidly discover new music. Users can discover hundreds of new songs in just a few minutes by swiping through snippets of personalized recommendations.</p>
-                    <p><b>Tech Stack:</b> Vue, Flask, TypeScript, Python, HTML, CSS, MongoDB</p>
+                    <p>Using the "swipe" concept pioneered by Tinder, I built a music discovery service for Spotify users. Users can quickly find new songs by swiping through short snippets of personalized recommendations. Recommendations are highly customizable, and liked songs can be added to a new playlist.</p>
+                    <p><b>Technologies:</b> Vue/TypeScript, Flask/Python</p>
                 </div>
             </div>
-            
-            <!-- {#if mobile}
-                <div class="mobile-img">
-                    <img src="images/rumble_sc_mobile.png" alt="">
-                </div>
-            {:else}
-                <div class="desktop-img">
-                    <img src="images/rumble_sc.png" alt="">
-                </div>  
-            {/if} -->
+        
             <div class="mobile-img">
                 <img src="images/allegro_sc_mobile.png" alt="">
             </div>
-            <div class="desktop-img">
-                <img src="images/allegro_sc.png" alt="">
-            </div>  
+            <div class="flapper">
+                <div class="desktop-img">
+                    <!-- <img src="images/rumble_sc.png" alt=""> -->
+                    <img src="images/allegro_sc_mobile.png" alt="">
+                </div>  
+                <div class="desktop-img">
+                    <!-- <img src="images/rumble_sc.png" alt=""> -->
+                    <img src="images/allegro_sc_mobile.png" alt="">
+                </div> 
+                <div class="desktop-img">
+                    <!-- <img src="images/rumble_sc.png" alt=""> -->
+                    <img src="images/allegro_sc_mobile.png" alt="">
+                </div>  
+            </div>
         </div>
     </div>
 </section>
@@ -52,6 +52,7 @@
         background-color: rgb(12, 12, 12);
         color: white;
         padding-top: 3rem;
+        padding-bottom: 3rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -88,8 +89,8 @@
 
     @media (min-width: 768px) {
         .content {
-            padding: 3rem;
-            gap: 3rem;
+            padding: 2rem 2rem;
+            gap: 2rem;
         }
     }
 
@@ -102,8 +103,7 @@
 
     @media (min-width: 768px) {
         .desc {
-            flex-direction: row;
-            gap: 2rem;
+            /* gap: 2rem; */
         }
     }
 
@@ -111,19 +111,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.4rem;
+        gap: 0.5rem;
         width: 4rem;
     }
 
     @media (min-width: 768px) {
         .icons {
-            width: 100%;
+            /* width: 100%; */
         }
     }
 
     .icon {
-        color: white;
-        width: 1.8rem;
+        color: rgb(230, 230, 230);
+        fill: rgb(230, 230, 230);
+        width: 1.6rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -134,31 +135,29 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /* gap: 1rem; */
-
-        font-size: 1.8rem;
+        gap: 0.5rem;
+        font-size: 1.6rem;
     }
 
     @media (min-width: 768px) {
         .title {
-            flex-direction: column;
-            justify-content: left;
+            /* flex-direction: column;
+            justify-content: left; */
             gap: 1rem;
         }
     }
 
     .summary {
-        color: rgb(200, 200, 200);
+        color: rgb(180, 180, 180);
         display: flex;
         flex-direction: column;
         gap: 1rem;
-
         font-size: 1.1rem;
     }
 
     @media(min-width: 480px) {
         .summary {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -169,11 +168,12 @@
     @media (min-width: 480px) {
         .desktop-img {
             display: flex;
+            width: 30%;
             justify-content: center;
-            /* align-items: center; */
+            align-items: center;
             background-color: rgba(128, 128, 128, 0.5);
             border-radius: 0.5rem;
-            padding: 0.5rem 0;
+            padding: 0.4rem;
         }
     }
 
@@ -193,9 +193,15 @@
     }
 
     img {
-        width: calc(100% - 1rem);
+        width: 100%;
         border-radius: 0.5rem;
         /* display: block; */
         /* max-width: 100%; */
+    }
+
+    .flapper {
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid red; */
     }
 </style>

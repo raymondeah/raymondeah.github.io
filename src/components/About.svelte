@@ -4,18 +4,14 @@
             <h2>About Me</h2>
     
             <p>
-            Hi! My name is Raymond (Ray) Eah and I'm a third-year student at Northeastern University studying 
+            Hi! I'm Raymond (Ray) Eah and I'm a third-year student at Northeastern University studying 
             Computer Science.
             </p>
-            
+
             <p>
-            Last summer, I was at <a href="https://www.oracle.com/" target="_blank">Oracle</a> as a Software Engineer Intern, where I worked on microservices and DevOps across an array of SaaS products related to project management.
+            I'm passionate about building robust and scalable projects that deliver great user experiences. I'm always eager to learn and grow, both personally and professionally. Currently I've got some cool projects in the works!
             </p>
-            
-            <p>
-            Last winter, I was at <a href="https://www.northeastern.edu/kostas/" target="_blank">Kostas Research Institute</a> as a Data Science Intern, where I worked on an R&D project in the geospatial sector involving remote sensing and satellite imaging data.
-            </p>
-            
+
             <p>
             In my free time, I enjoy playing volleyball, cooking, and fitness.
             </p>
@@ -31,7 +27,7 @@
         background-color: rgb(32, 32, 32);
         display: flex;
         justify-content: center;
-        color: rgb(200, 200, 200);
+        color: rgb(180, 180, 180);
         font-size: 1.1rem;
         gap: 1rem;
         padding: 6rem 1rem;

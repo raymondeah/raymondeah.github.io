@@ -62,25 +62,19 @@
         width: 100%;
         height: 100%;
         background-color: rgb(12, 12, 12);
-        color:white;
+        color:rgb(220, 220, 220);
         position: relative;
         user-select: none;
     }
 
     a {
         text-decoration: none;
-        color: white;
+        color: rgb(230, 230, 230);
         font-weight: 600;
     }
 
-    @media (min-width: 768px) {
-        a {
-            color: rgb(200, 200, 200)
-        }
-    }
-
     a:hover {
-        color:white;
+        color:rgb(180, 180, 180);
     }
     
     .big {
@@ -91,7 +85,7 @@
     .small {
         font-size: 1.2rem;
         margin-top: 0.5rem;
-        color: rgb(150, 150, 150);
+        color: rgb(130, 130, 130);
     }
 
 
@@ -106,7 +100,7 @@
     }
 
     .intro {
-        color: rgb(150, 150, 150);
+        color: rgb(130, 130, 130);
     }
 
     nav {
@@ -130,7 +124,7 @@
         font-size: 1.2rem;
         transform: translateX(100%);
         transition: transform 0.4s ease-in;
-        border: 2px solid white;
+        border: 2px solid rgb(230, 230, 230);
         border-right: none;
         user-select: none;
     }
@@ -156,7 +150,7 @@
         align-items: center;
         width: 2rem;
         height: 2rem;
-        fill: white;
+        fill: rgb(230, 230, 230);
     }
 
     .burger {
@@ -171,7 +165,7 @@
         width: 2rem;
         height: 4px;
         margin: 7px;
-        background-color: white;
+        background-color: rgb(230, 230, 230);
         transition: all 0.3s ease;
     }
 

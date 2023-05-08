@@ -11,7 +11,7 @@
         <div class="content">
             <div class="desc">
                 <div class="title">
-                    <p><b>RUMBLE</b></p>
+                    <p><b><a href="https://wordleaot.com" target="_blank">RUMBLE</a></b></p>
                     <div class="icons">
                         <a href="https://wordleaot.com" target="_blank">
                             <div class="icon">
@@ -27,8 +27,8 @@
                     </div>
                 </div>
                 <div class="summary">
-                    <p>RUMBLE is an Attack on Titan themed variant of Wordle with a limited wordbank. The puzzle resets daily, stats are tracked, and users can share their results, just like the original game. Play while you wait for Part 3!</p>
-                    <p><b>Tech Stack:</b> JavaScript, HTML, CSS</p>
+                    <p>RUMBLE is an Attack on Titan themed variant of Wordle. Features include a custom wordbank, daily puzzles, stat tracking, and shareable results, just like the original Wordle.</p>
+                    <p><b>Technologies:</b> JavaScript, HTML, CSS</p>
                 </div>
             </div>
             
@@ -42,11 +42,22 @@
                 </div>  
             {/if} -->
             <div class="mobile-img">
-                <img src="images/rumble_sc_mobile.png" alt="">
+                <img src="images/rumble1.png" alt="">
             </div>
-            <div class="desktop-img">
-                <img src="images/rumble_sc.png" alt="">
-            </div>  
+            <div class="flapper">
+                <div class="desktop-img">
+                    <!-- <img src="images/rumble_sc.png" alt=""> -->
+                    <img src="images/rumble1.png" alt="">
+                </div>  
+                <div class="desktop-img">
+                    <!-- <img src="images/rumble_sc.png" alt=""> -->
+                    <img src="images/rumble2.png" alt="">
+                </div> 
+                <div class="desktop-img">
+                    <!-- <img src="images/rumble_sc.png" alt=""> -->
+                    <img src="images/rumble3.png" alt="">
+                </div>  
+            </div>
         </div>
     </div>
 </section>
@@ -54,7 +65,7 @@
 <style>
     section {
         background-color: rgb(12, 12, 12);
-        color: white;
+        /* color: white; */
         padding-top: 3rem;
         padding-bottom: 8rem;
         /* padding: 8rem 0; */
@@ -66,7 +77,9 @@
     }
 
     a {
-        color: white;
+        /* color: white; */
+        text-decoration: none;
+        color: rgb(230, 230, 230);
     }
 
     .card {
@@ -76,7 +89,7 @@
         border-radius: 0.5rem;
         background-color: rgb(32, 32, 32);
         width: min(96%, 60rem);
-        color: white;
+        /* color: white; */
     }
 
     .content {
@@ -97,8 +110,8 @@
 
     @media (min-width: 768px) {
         .content {
-            padding: 3rem;
-            gap: 3rem;
+            padding: 2rem;
+            gap: 2rem;
         }
     }
 
@@ -106,36 +119,37 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        color: white;
+        /* color: white; */
     }
 
     @media (min-width: 768px) {
         .desc {
-            flex-direction: row;
-            gap: 2rem;
+            /* flex-direction: row; */
+            /* gap: 2rem; */
         }
     }
 
     .icons {
         color: white;
+        /* border: 2px solid red; */
         display: flex;
         justify-content: center;
         align-items: center;
-        /* gap: 0rem; */
+        gap: 0.5rem;
         width: 4rem;
     }
 
     @media (min-width: 768px) {
         .icons {
-            width: 100%;
+            /* width: 100%; */
         }
     }
 
     .icon {
-        width: 2rem;
-        height: 2rem;
-        fill: white;
-        color: white;
+        width: 1.6rem;
+        height: 1.6rem;
+        fill: rgb(230, 230, 230);
+        color: rgb(230, 230, 230);
         padding: 0;
         display: flex;
         justify-content: center;
@@ -148,30 +162,24 @@
         flex-direction: row;
         justify-content: space-between;
         color: white;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     @media (min-width: 768px) {
         .title {
-            flex-direction: column;
-            justify-content: left;
-            gap: 0.5rem;
+            /* flex-direction: column; */
+            /* justify-content: left; */
+            /* gap: 0.5rem; */
         }
     }
 
     .summary {
-        color: rgb(200, 200, 200);
+        color: rgb(180, 180, 180);
         display: flex;
         flex-direction: column;
         gap: 1rem;
 
         font-size: 1.1rem;
-    }
-
-    @media(min-width: 480px) {
-        .summary {
-            font-size: 1.2rem;
-        }
     }
 
     .desktop-img {
@@ -181,11 +189,12 @@
     @media (min-width: 480px) {
         .desktop-img {
             display: flex;
+            width: 30%;
             justify-content: center;
-            /* align-items: center; */
+            align-items: center;
             background-color: rgba(128, 128, 128, 0.5);
             border-radius: 0.5rem;
-            padding: 0.5rem 0;
+            padding: 0.4rem;
         }
     }
 
@@ -194,7 +203,7 @@
         justify-content: center;
         background-color: rgba(128, 128, 128, 0.5);
         border-radius: 0.5rem;
-        padding: 0.5rem 0;
+        padding: 0.4rem;
         /* height: 100%; */
     }
 
@@ -205,9 +214,16 @@
     }
 
     img {
-        width: calc(100% - 1rem);
+        /* width: calc(100% - 1rem);  */
+        width: 100%;
         border-radius: 0.5rem;
         /* display: block; */
         /* max-width: 100%; */
+    }
+
+    .flapper {
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid red; */
     }
 </style>

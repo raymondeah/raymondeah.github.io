@@ -15,6 +15,6 @@
         font-size: 0.95rem;
         font-family: 'Lato', sans-serif;
         font-weight: bold;
-        color:white;
+        color:rgb(230, 230, 230);
     }
 </style>

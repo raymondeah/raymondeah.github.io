@@ -8,7 +8,7 @@
     <div class="container">
         <div class="left">
             <h2>Get in touch</h2>
-            <p class="desc">I'm looking for Winter/Spring 2023 software engineering internships. If you think I'm a good fit, shoot me an email! Or if you'd just like to say hi, don't be afraid to reach out!</p>
+            <p class="desc">I'm currently open to new grad engineering opportunities. If you think I'm a good fit, shoot me an email! Or if you'd just like to say hi, don't be afraid to reach out!</p>
         </div>
         <div class="right">
             <a href="Eah_Raymond.pdf" target="_blank">
@@ -47,7 +47,7 @@
 <style>
     section {
         background-color: rgb(32, 32, 32);
-        color: rgb(200, 200, 200);
+        color: rgb(180, 180, 180);
         display: flex;
         justify-content: center;
         padding: 6rem 1rem;
@@ -56,7 +56,11 @@
     a {
         text-decoration: none;
         font-weight: bold;
-        color: white;
+        color: rgb(230, 230, 230);
+    }
+
+    h2 {
+        color: rgb(230, 230, 230);
     }
 
     .container {
@@ -94,7 +98,7 @@
         height: 3.5rem;
         /* border: 2px solid red; */
         /* background-color: rgb(51, 51, 51); */
-        border: 1px solid white;
+        border: 1px solid rgb(80, 80, 80);
         font-size: 1.1rem;
         border-radius: 0.5em;
         display: flex;
@@ -103,8 +107,9 @@
     }
 
     .resume:hover {
-        color: rgb(180, 180, 180);
-        border: 1px solid rgb(180, 180, 180);
+        /* color: rgb(180, 180, 180); */
+        background-color: rgb(38, 38, 38);
+        /* border: 1px solid rgb(180, 180, 180); */
     }
 
     .icons {
@@ -118,7 +123,7 @@
     .icon-container {
         width: 5rem;
         height: 3.5rem;
-        border: 1px solid white;
+        border: 1px solid rgb(80, 80, 80);
         border-radius: 0.5em;
         display: flex;
         justify-content: center;
@@ -126,18 +131,21 @@
     }
 
     .icon-container:hover {
-        border: 1px solid rgb(180, 180, 180);
+        /* border: 1px solid rgb(180, 180, 180); */
+        background-color: rgb(38, 38, 38);
     }
 
     .icon-container:hover .icon {
-        fill:rgb(180, 180, 180);
-        color: rgb(180, 180, 180);
+        /* fill:rgb(180, 180, 180); */
+        /* color: rgb(180, 180, 180); */
+        /* background-color: rgb(38, 38, 38); */
     }
 
     .icon {
         width: 1.6rem;
         height: 1.6rem;
-        fill: white;
+        /* fill: white; */
+        fill: rgb(230, 230, 230);
     }
     
     .li {
